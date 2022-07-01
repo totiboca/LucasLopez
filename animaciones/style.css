@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0; 
+}
+
+html{	
+     font-size: 62.5%;
+     }
+
+body{
+	background-image: url(../img/back.jpg);
+	overflow-x: hidden;
+	}
+
+
+.gridBody{
+	display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav " 
+    "header " 
+    "main " 
+    "pie"	
+  ;
+
+}
+
+}
+  @keyframes animateC{
+  	0%{width: 220px;background-color: yellow;}
+  	50%{width: 220px;background-color: red;}
+    100%{width: 220px	;background-color: green;}  	
+  }
+
+.Animate{
+        animation-name: animateC;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-duration: 5s;
+    }
+
+
+.Conteiner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav nav"
+    "header header"
+    "main main"
+    "pie pie"
+;
+}
+
+.gridHeader{
+	grid-area: header;
+
+}
+
+h1{
+	font-family: 'Quintessential', cursive;
+	color: darkblue;
+	text-align: center;	
+	margin: 20px;
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+h2 {
+	color: darkblue;
+	text-align: center;
+	margin: 20px;
+	font-size: 3rem;
+}
+
+p{
+	color: black;
+	font-size: 2rem;
+	line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{	
+     background-color: #130B7A;
+     padding: 10px 20px;
+     height: 100px;
+     grid-area: nav;
+}
+
+nav img{
+	width: 100px;
+	height: 100px;
+	float: left;
+
+}
+
+nav ul{
+    list-style-type: none;
+    float: right;
+
+
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+	margin-right: 10px;
+
+}
+
+nav ul li a{
+	color:white ;
+	text-decoration: none;
+	font-size: 2.5rem;
+	font-weight:500 ;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+/*Selectores de Clases */
+
+.text-alert{
+	color: red;
+}
+
+
+.textCenter{
+	text-align: center;
+}
+
+.text-bold{
+	font-weight: 600;
+}
+
+
+.bgLight{
+	background-color: #E1FCE4;
+
+}
+
+.novedades__articulo{
+
+    background-color: #6E6969;
+	width: 90%;
+    height: 80px;
+    margin: 50px auto;
+    padding: 50px 20px;
+    border: double 2px #1212F7;
+
+}
+
+footer a img{
+		width: 50px;
+	    height: 50px;
+	}
+
+.controlFooter{
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	grid-area: pie;
+
+}
+
+#tablas {
+	text-align: center;
+	font-size: 2rem;
+	margin: 20px;
+	padding: 10px 750px;
+	grid-area: tabla;
+}
+
+
+#imagenBienvenida{
+	width: 500px;
+	height: 300px;
+	grid-area: main;
+}
+
+#productos {
+	background-color: white;
+}
+	
+#productos h1 {
+    text-transform: uppercase;
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px 0;
+	background-color: white;
+	font-family: Roboto, sans-serif;
+	margin: 20px 0;
+}
+
+#productos .galeria {
+	margin: 20px;
+}
+
+#productos .galeria figure{
+		text-align: center;
+	}
+
+		#productos .galeria figure img{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			width: 300px;
+	        height: 200px;
+		}
+
+		#productos .galeria figure figcaption{
+			font-size: 2rem;
+			font-weight: bold;
+			color: #0101EA ;
+			padding: 10px 0;
+			background-color: white;
+		}
+
+		#productos .galeria p.price{
+			color: #0CF007;
+			padding-bottom: 10px;
+			background-color: white;
+			font-weight: bold;
+		}
+
+#imagenFormadepago {
+	text-align: center;
+	width: 700px;
+	height: 267px;
+	padding: 50px 50px;
+	margin: 50px 200px;
+}
+
+#contacto {
+	text-align: center;
+	font-size: 2rem;
+	padding: 30;
+	margin: 30;
+	border: 2rem;
+
+}
+
+@media (max-width: 375px) {
+
+	.gridBody{
+	display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav " 
+    "header "
+    "pie" 
+    "main " 
+    	
+  ;
+
+
+}
+
+.Conteiner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav nav"
+    "header header"
+    "pie pie"
+    "main main"
+    
+;
+}
+  
+
+}	
+
+
+
+
+
+
+
+
+
